@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Negra Criativa Estúdio | Design, Social Media e Sites</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2b0020;--bg2:#6b1140;--pk:#ff0d87;--tx:#fff}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;background:#2b0020ee;backdrop-filter:blur(8px)}
+header b{font-weight:800;color:var(--pk)}nav{display:flex;gap:22px;align-items:center}nav a{color:#fff;text-decoration:none;font-size:.9rem}
+.btn{display:inline-block;background:var(--pk);color:#fff!important;padding:14px 30px;border-radius:99px;font-weight:600;text-decoration:none;border:0;transition:transform .2s}
+.btn:hover{transform:scale(1.05)}.btn.sm{padding:8px 18px}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+section{padding:90px 5vw;max-width:1150px;margin:auto}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;margin-bottom:28px;line-height:1.1}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.ghost{position:absolute;right:-4vw;top:8%;font-size:22vw;font-weight:800;color:transparent;-webkit-text-stroke:1px #ffffff1f;white-space:nowrap;z-index:-1;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translateX(-6vw)}}
+.kicker{color:var(--pk);font-weight:600;margin-bottom:10px}
+h1{font-size:clamp(3rem,10vw,7.5rem);font-weight:800;line-height:.95;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--pk)}.lead{max-width:520px;margin:26px 0 34px;font-weight:300;font-size:1.15rem}
+.about{display:grid;grid-template-columns:280px 1fr;gap:50px;align-items:center;background:var(--pk);border-radius:40px;margin:0 5vw;max-width:none;padding:60px}
+.blob{aspect-ratio:1;background:var(--bg);border-radius:62% 38% 55% 45%/48% 60% 40% 52%;display:grid;place-items:center;font-size:8rem;font-weight:800;color:var(--pk)}
+.about p{margin-bottom:14px}.about h2{margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:#ffffff14;border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.card h3{color:var(--pk)}.card ul{list-style:none;font-size:.9rem;font-weight:300;flex:1}.card li{padding:3px 0}
+.card li::before{content:"+ ";color:var(--pk)}.price{font-size:2.6rem;font-weight:800}.price small{font-size:1rem;font-weight:300}
+.svc{background:var(--bg2);border-radius:18px;padding:22px;font-weight:600}
+.tabs{display:flex;gap:10px;margin-bottom:24px}.tabs button{font:inherit;padding:10px 22px;border-radius:99px;border:2px solid var(--pk);background:0;color:#fff;cursor:pointer}
+.tabs .on{background:var(--pk)}.note{margin-top:20px;font-weight:300;opacity:.8}
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px}
+.steps li{counter-increment:s;font-weight:300;font-size:.9rem;border-top:2px solid var(--pk);padding-top:14px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;border:2px solid #fff;font-weight:800;margin-bottom:10px}
+.cta{text-align:center}footer{text-align:center;padding:30px;opacity:.6;font-size:.85rem}
+@media(max-width:760px){.about{grid-template-columns:1fr;padding:32px}.blob{max-width:160px;font-size:5rem}nav a:not(.btn){display:none}}
+@media(prefers-reduced-motion:reduce){.ghost{animation:none}html{scroll-behavior:auto}}
+
+</style></head><body>
+<header><b>Negra Criativa</b><nav><a href="#servicos">Serviços</a><a href="#pacotes">Pacotes</a><a href="#processo">Processo</a><a class="btn sm" href="#contato">Orçamento</a></nav></header>
+<section class="hero"><span class="ghost" aria-hidden="true">Negra Criativa</span>
+<p class="kicker">Negra Criativa Estúdio</p><h1>Seu perfil <em>memorável</em>.</h1>
+<p class="lead">Análise de perfil, social media, identidade visual e landing pages para marcas que querem ser lembradas.</p>
+<a class="btn" href="#pacotes">Ver pacotes</a></section>
+<section class="about"><div class="blob" aria-hidden="true">R</div><div><h2>Olá, sou a Raquel</h2>
+<p>Designer, social media e desenvolvedora. Meu estúdio faz análise de perfil com alinhamento visual para impulsionar o seu negócio.</p>
+<p><b>Missão:</b> empoderar marcas e comunidades por meio da criatividade e inovação.</p></div></section>
+<section id="servicos"><h2>Nossos serviços</h2><div class="grid" id="svc"></div>
+<p class="note">Desenvolvimento do seu site é cobrado à parte.</p></section>
+<section id="pacotes"><h2>Investimento</h2>
+<div class="tabs"><button class="on" data-t="insta">Instagram</button><button data-t="lp">Landing Page</button></div>
+<div class="grid" id="pk"></div></section>
+<section id="processo"><h2>Como funciona</h2><ol class="steps">
+<li><b>Pagamento</b> integral e assinatura do contrato</li><li>Reunião de <b>briefing</b></li><li><b>Análise</b> do briefing e pesquisa de referência</li><li>Alinhamento e aprovação de <b>moodboard</b></li><li>Reunião de <b>apresentação</b></li><li>Alterações, implementação e conclusão</li></ol>
+<p class="note">Prazo a definir com o cliente.</p></section>
+<section id="contato" class="cta"><h2>Vamos tornar seu perfil memorável?</h2><a class="btn" id="wa" href="#">Chamar no WhatsApp</a></section>
+<footer>© Negra Criativa Estúdio</footer><script>
+const services=["Análise de Perfil","Social Media","Artes para redes sociais","Landing Page","Identidade Visual","Tráfego pago"];
+document.getElementById("svc").innerHTML=services.map(s=>`<div class="svc">${s}</div>`).join("");
+const pk={insta:[["Básico",950,["Análise de perfil","Pesquisa de mercado","Desenvolvimento de conteúdo (tema + legenda)","10 posts mensais"]],
+["Padrão",2100,["Análise de perfil","Pesquisa de mercado","Alinhamento visual","20 posts mensais","Alinhamento de estratégias digitais","Criação de Destaques"]],
+["Padrão II",3100,["Análise de perfil","Pesquisa de mercado","Alinhamento visual","30 posts mensais","Alinhamento de estratégias digitais","Criação de Destaques"]],
+["Premium",5000,["Análise de perfil","Pesquisa de mercado","Alinhamento visual","Curadoria de conteúdo","Consultoria","30 posts mensais","Gestão de Tráfego Pago","Programação dos posts"]]],
+lp:[["Básico",3500,["Design personalizado","Copywriting persuasivo","Formulário de captura de leads","Imagens e mídia de qualidade","SEO básico"]],
+["Padrão",5500,["Tudo do Básico","Análise e rastreamento","Suporte e manutenção 3 meses","Rodapé completo"]],
+["Premium",9100,["Tudo do Padrão","Conteúdo dinâmico","Automação de marketing","Suporte e manutenção 6 meses","Consultoria"]]]};
+const box=document.getElementById("pk");
+function show(k){box.innerHTML=pk[k].map(([n,p,l])=>`<article class="card"><h3>${n}</h3><ul>${l.map(i=>`<li>${i}</li>`).join("")}</ul><div class="price"><small>R$</small> ${p.toLocaleString("pt-BR")}</div></article>`).join("")}
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tabs button").forEach(x=>x.classList.remove("on"));b.classList.add("on");show(b.dataset.t)});
+show("insta");
+document.getElementById("wa").href="https://wa.me/55SEUNUMERO?text="+encodeURIComponent("Olá Raquel! Quero saber mais sobre os pacotes da Negra Criativa.");
+
+</script></body></html>
